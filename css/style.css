@@ -2,12 +2,27 @@
   box-sizing: border-box;
 }
 
+/* 
+  8~13라인 header태그에 css 속성을 적용했는데 reset.css를 보면 header태그에 display 속성이
+  적용되어있네... 그렇다는건 header태그에 css속성이 중복적용 되었다는 말이지...
+  이 문제를 해결하기 위해서는 여러방법이 있으니 충분히 고민해보게 reset.css 내용은 가능하면 수정하지 않는걸 추천하네
+  그리고 태그에 직접 css 속성을 적용하는건 실무에서 극도로 꺼려하니 태그에 직접 css 속성을 걸지말도록!!!
+  
+  # 참고)
+    css속성 우선순위에 관한 아티클 및 강의
+    - https://www.edwith.org/boostcourse-web/lecture/16674/
+    - https://opentutorials.org/course/2418/13409
+    
+  첨언 : css (cascading style sheet)
+*/
 header {
-  display: flex;
+  display: flex !important ; /* 과연 이 속성은 제대로 적용되었을까? 한번 브라우저의 개발자 도구를 적극적으로 활용하여 분석해보자! */
   flex-direction: row;
   justify-content: space-between;
   background: blueviolet;
 }
+/*  */
+
 .header-start {
 }
 
