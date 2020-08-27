@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/38c689ec28.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-start">
+        <button
+          style="
+            border-style: none;
+            background-color: rgba(0, 0, 0, 0);
+            margin-right: 20px;
+          "
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href="#">
+          <img src="icon/youtube.png" width="80px" />
+        </a>
+      </div>
+      <div class="header-search">
+        <input type="text" placeholder="검색어를 입력해주세요." />
+        <button class="search-button">검색</button>
+      </div>
+      <div class="user-infor"></div>
+    </header>
+    <div class="container">
+      <aside>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <!-- span 태그 : div 태그처럼 특별한 기능을 갖고있지 않고, css와 함께 쓰이며, 줄 바꿈이 되지 않는다.. -->
+              <span>홈</span>
+            </a>
+          </li>
+          <!-- aside 홈  -->
+          <li>
+            <a href="#">
+              <i class="fas fa-fire"></i>
+              <span>인기</span>
+            </a>
+          </li>
+          <!-- aside 인기  -->
+          <li>
+            <a href="#">
+              <i class="fas fa-book"></i>
+              <span>구독</span>
+            </a>
+          </li>
+          <!-- aside 구독 -->
+          <li>
+            <a href="#">
+              <i class="fas fa-book-open"></i>
+              <span>보관함</span>
+            </a>
+          </li>
+          <!-- aside 보관함 -->
+          <li>
+            <a href="#">
+              <i class="fas fa-youtube"></i>
+              <span>시청 기록</span>
+            </a>
+          </li>
+          <!-- aside 시청 기록 -->
+        </ul>
+      </aside>
+      <main>
+        <div class="head-title">
+          <span class="head-title--style" style="margin: 24px 0px 24px 8px;"
+            >맞춤 영상</span
+          >
+        </div>
+        <div class="videobook">
+          <img class="videobook--image" src="./image/image1.jpg" />
+          <div class="video--infor">
+            <a id="avatar-link" href="https://www.youtube.com/">
+              <img class="user--image" src="./image/user1.jpg" />
+            </a>
+            <div class="video-meta">
+              <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
+              <a id="video-title-link" href="https://www.youtube.com/">
+                <span class="videobook--title">동영상 제목</span>
+              </a>
+              <span class="video-meta__title">동영상 채널 제목</span>
+              <div class="video-meta__infor">
+                <span class="video-meta__infor">동영상 채널 정보</span>
+                <span> ● </span>
+                <span class="video-meta__infor">1주</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+<!-- 
+//277 155 -->
+
+<!-- 
+    youtube size
+    100% 일때,
+
+    *header
+    좌측 상단 메뉴바 : 24*24
+    youtube 이미지 : 80*24
+    youtube korea 표시 이미지 : 12.44*24
+    
+    *aside
+    상단부
+    홈/인기/구독 catalog box : 240*40
+    홈/인기/구독 이미지 : 24*24
+    홈/인기/구독 글씨 : 144*17.6
+    
+    하단부
+    240*253
+    보관함/시청 기록/ 내 동영상/ 나중에 볼 동영상/ 좋아요 표시한 동영상 : 사이즈는 상단부와 동일
+ 
+    *main
+    영상 크기 : 252*141
+    계정 화면 : 36*36
+    제목 : 180*40
+-->
