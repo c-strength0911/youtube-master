@@ -1,36 +1,44 @@
-* {
-  box-sizing: border-box;
-}
-
-/* 
-  8~13라인 header태그에 css 속성을 적용했는데 reset.css를 보면 header태그에 display 속성이
-  적용되어있네... 그렇다는건 header태그에 css속성이 중복적용 되었다는 말이지...
-  이 문제를 해결하기 위해서는 여러방법이 있으니 충분히 고민해보게 reset.css 내용은 가능하면 수정하지 않는걸 추천하네
-  그리고 태그에 직접 css 속성을 적용하는건 실무에서 극도로 꺼려하니 태그에 직접 css 속성을 걸지말도록!!!
-  
-  # 참고)
+/* # 참고)
     css속성 우선순위에 관한 아티클 및 강의
     - https://www.edwith.org/boostcourse-web/lecture/16674/
     - https://opentutorials.org/course/2418/13409
     
-  첨언 : css (cascading style sheet)
-*/
+  첨언 : css (cascading style sheet) */
+
+@media screen and (max-width: 992px) {
+  .aside--web-size {
+    display: none;
+  }
+  .aside--tablet-size {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .web {
+    display: flex;
+  }
+  .tablet {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
 header {
-  display: flex !important ; /* 과연 이 속성은 제대로 적용되었을까? 한번 브라우저의 개발자 도구를 적극적으로 활용하여 분석해보자! */
+  display: flex !important ; /* 우선 순위를 reset < style로 설정하기 위해 !important를 적어줌!! 과연 이 속성은 제대로 적용되었을까? 한번 브라우저의 개발자 도구를 적극적으로 활용하여 분석해보자! */
   flex-direction: row;
   justify-content: space-between;
-  background: blueviolet;
-}
-/*  */
-
-.header-start {
+  height: 50px !important;
 }
 
 aside {
   width: 240px;
   height: 100vh;
   display: flex;
-  background: red;
+  /* background: red; */
 }
 body {
   display: flex;
@@ -39,76 +47,145 @@ body {
 
 main {
   display: flex;
-  background: blue;
+  flex-direction: column;
 }
 .container {
   display: flex;
 }
-
-/*
 ul {
-  list-style: none;
-}
-i {
-  margin-right: 10px;
-  color: gray;
-}
-
-.head-title--style {
-  font-size: 2em;
-}
-a {
-  text-decoration: none;
-  color: #000000;
+  margin: 20px !important;
+  align-content: center;
 }
 li {
-  padding: 24px, 24px;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 10px !important;
 }
-.header-start,
-.header-search,
+li > a {
+  color: gray;
+  text-decoration: none;
+}
+
+a > i {
+  margin-right: 12px !important;
+  height: 30px;
+  width: 30px;
+}
+
 .head-title {
+  height: 30px;
   display: flex;
-  justify-self: center;
-  align-items: center;
+  align-content: center;
+  text-align: center;
 }
+
+.head-title > span {
+  align-self: center;
+}
+
 .videobook {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
-}
-.header-search > input {
-  width: 500px;
-}
-.videobook--image {
-  height: 30vh;
-}
-#avatar-link {
-  margin-top: 12px;
-  margin-right: 12px;
+  width: 360px;
+  height: 300px;
 }
 
-#avatar-link > .user--image {
-  width: 45px;
-  height: 45px;
-  border-radius: 70%;
-  margin-right: 20p;
+.videobook__img {
+  width: 100%;
 }
-
-.video-meta {
+.videobook-infor__img {
+  border-radius: 50%;
+  width: 40px;
+  margin-top: 10px;
+}
+.videobook-meta {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
 }
-.video--infor {
+.video-metabook > a {
+  text-decoration: none;
+}
+.videobook-meta__title {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+#videobook-meta__title-anchor {
+  margin-bottom: 5px;
+}
+.video-meta__infor > span {
+  color: gray;
+}
+.videobook--wrap {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.videobook--title {
-  font-size: 24px;
-}
-
-.video-meta__title,
-.video-meta__title-meta__infor {
-  font-size: 18px;
-  display: flex;
-} */
+/*
+  ul {
+    list-style: none;
+  }
+  i {
+    margin-right: 10px;
+    color: gray;
+  }
+  
+  .head-title--style {
+    font-size: 2em;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  li {
+    padding: 24px, 24px;
+  }
+  .header-start,
+  .header-search,
+  .head-title {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+  .videobook {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .header-search > input {
+    width: 500px;
+  }
+  .videobook--image {
+    height: 30vh;
+  }
+  #avatar-link {
+    margin-top: 12px;
+    margin-right: 12px;
+  }
+  
+  #avatar-link > .user--image {
+    width: 45px;
+    height: 45px;
+    border-radius: 70%;
+    margin-right: 20p;
+  }
+  
+  .video-meta {
+    display: flex;
+    flex-direction: column;
+  }
+  .video--infor {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .videobook--title {
+    font-size: 24px;
+  }
+  
+  .video-meta__title,
+  .video-meta__title-meta__infor {
+    font-size: 18px;
+    display: flex;
+  } */
