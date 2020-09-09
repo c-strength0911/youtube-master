@@ -1,0 +1,6 @@
+header {
+  display: flex !important ; /* 우선 순위를 reset < style로 설정하기 위해 !important를 적어줌!! 과연 이 속성은 제대로 적용되었을까? 한번 브라우저의 개발자 도구를 적극적으로 활용하여 분석해보자! */
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px !important;
+}

@@ -1,0 +1,54 @@
+.head-title {
+  height: 30px;
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+
+.head-title > span {
+  align-self: center;
+}
+
+.videobook {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 360px;
+  height: 300px;
+}
+
+.videobook__img {
+  width: 100%;
+}
+.videobook-infor__img {
+  border-radius: 50%;
+  width: 40px;
+  margin-top: 10px;
+}
+.videobook-meta {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.video-metabook > a {
+  text-decoration: none;
+}
+.videobook-meta__title {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+#videobook-meta__title-anchor {
+  margin-bottom: 5px;
+}
+.video-meta__infor > span {
+  color: gray;
+}
+.videobook--wrap {
+  display: flex;
+  margin-top: 10px;
+}
+.drawer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
