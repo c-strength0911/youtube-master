@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aside.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <script
       src="https://kit.fontawesome.com/38c689ec28.js"
       crossorigin="anonymous"
@@ -20,9 +22,10 @@
             border-style: none;
             background-color: rgba(0, 0, 0, 0);
             margin-right: 20px;
-          ">
+          "
+        >
           <i class="fas fa-bars"></i>
-        </button> 
+        </button>
         <a href="#">
           <img src="icon/youtube.png" width="80px" />
         </a>
@@ -34,44 +37,38 @@
       <div class="user-infor"></div>
     </header>
     <div class="container">
-
       <!-- tablet에서의 aside -->
       <aside class="aside--tablet-size">
         <ul>
           <li>
             <a href="#">
-              <i class="fas fa-home"></i>              
+              <i class="fas fa-home"></i>
             </a>
           </li>
           <!-- aside 홈  -->
           <li>
             <a href="#">
               <i class="fas fa-fire"></i>
-            
             </a>
           </li>
           <!-- aside 인기  -->
           <li>
             <a href="#">
               <i class="fas fa-book"></i>
-            
             </a>
           </li>
           <!-- aside 구독 -->
           <li>
             <a href="#">
               <i class="fas fa-book-open"></i>
-             
             </a>
           </li>
           <!-- aside 보관함 -->
           <li>
             <a href="#">
               <i class="fas fa-youtube"></i>
-              
             </a>
           </li>
-         
         </ul>
       </aside>
 
@@ -120,17 +117,234 @@
         <div class="head-title">
           <span class="head-title--style">맞춤 영상</span>
         </div>
-        <div class="videobook">
-          <img class="videobook__img" src="./image/image1.jpg" />
-          <div class="videobook--wrap">
-            <div class="videobook-infor">
-              <a id="videobook-infor__avatar-anchor" href="https://www.youtube.com/">
-                <img class="videobook-infor__img" src="./image/user1.jpg" />
-              </a>
-            </div>
+        <div class="drawer">
+          <div class="videobook">
+            <img class="videobook__img" src="./image/image1.jpg" />
+            <div class class="videobook--wrap">
+              <div class="videobook-infor">
+                <a
+                  id="videobook-infor__avatar-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <img class="videobook-infor__img" src="./image/user1.jpg" />
+                </a>
+              </div>
               <div class="videobook-meta">
                 <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
-                <a id="videobook-meta__title-anchor" href="https://www.youtube.com/">
+                <a
+                  id="videobook-meta__title-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <span class="videobook-meta__title">동영상 제목</span>
+                </a>
+                <a href="#">
+                  <span class="videobook-meta__title">채널 제목</span>
+                </a>
+                <div class="video-meta__infor">
+                  <span class="video-meta__infor">조회수</span>
+                  <span> ● </span>
+                  <span class="video-meta__infor">1주</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="videobook">
+            <img class="videobook__img" src="./image/image1.jpg" />
+            <div class class="videobook--wrap">
+              <div class="videobook-infor">
+                <a
+                  id="videobook-infor__avatar-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <img class="videobook-infor__img" src="./image/user1.jpg" />
+                </a>
+              </div>
+              <div class="videobook-meta">
+                <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
+                <a
+                  id="videobook-meta__title-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <span class="videobook-meta__title">동영상 제목</span>
+                </a>
+                <a href="#">
+                  <span class="videobook-meta__title">채널 제목</span>
+                </a>
+                <div class="video-meta__infor">
+                  <span class="video-meta__infor">조회수</span>
+                  <span> ● </span>
+                  <span class="video-meta__infor">1주</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="videobook">
+            <img class="videobook__img" src="./image/image1.jpg" />
+            <div class class="videobook--wrap">
+              <div class="videobook-infor">
+                <a
+                  id="videobook-infor__avatar-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <img class="videobook-infor__img" src="./image/user1.jpg" />
+                </a>
+              </div>
+              <div class="videobook-meta">
+                <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
+                <a
+                  id="videobook-meta__title-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <span class="videobook-meta__title">동영상 제목</span>
+                </a>
+                <a href="#">
+                  <span class="videobook-meta__title">채널 제목</span>
+                </a>
+                <div class="video-meta__infor">
+                  <span class="video-meta__infor">조회수</span>
+                  <span> ● </span>
+                  <span class="video-meta__infor">1주</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="videobook">
+            <img class="videobook__img" src="./image/image1.jpg" />
+            <div class class="videobook--wrap">
+              <div class="videobook-infor">
+                <a
+                  id="videobook-infor__avatar-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <img class="videobook-infor__img" src="./image/user1.jpg" />
+                </a>
+              </div>
+              <div class="videobook-meta">
+                <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
+                <a
+                  id="videobook-meta__title-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <span class="videobook-meta__title">동영상 제목</span>
+                </a>
+                <a href="#">
+                  <span class="videobook-meta__title">채널 제목</span>
+                </a>
+                <div class="video-meta__infor">
+                  <span class="video-meta__infor">조회수</span>
+                  <span> ● </span>
+                  <span class="video-meta__infor">1주</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="videobook">
+            <img class="videobook__img" src="./image/image1.jpg" />
+            <div class class="videobook--wrap">
+              <div class="videobook-infor">
+                <a
+                  id="videobook-infor__avatar-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <img class="videobook-infor__img" src="./image/user1.jpg" />
+                </a>
+              </div>
+              <div class="videobook-meta">
+                <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
+                <a
+                  id="videobook-meta__title-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <span class="videobook-meta__title">동영상 제목</span>
+                </a>
+                <a href="#">
+                  <span class="videobook-meta__title">채널 제목</span>
+                </a>
+                <div class="video-meta__infor">
+                  <span class="video-meta__infor">조회수</span>
+                  <span> ● </span>
+                  <span class="video-meta__infor">1주</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="videobook">
+            <img class="videobook__img" src="./image/image1.jpg" />
+            <div class class="videobook--wrap">
+              <div class="videobook-infor">
+                <a
+                  id="videobook-infor__avatar-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <img class="videobook-infor__img" src="./image/user1.jpg" />
+                </a>
+              </div>
+              <div class="videobook-meta">
+                <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
+                <a
+                  id="videobook-meta__title-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <span class="videobook-meta__title">동영상 제목</span>
+                </a>
+                <a href="#">
+                  <span class="videobook-meta__title">채널 제목</span>
+                </a>
+                <div class="video-meta__infor">
+                  <span class="video-meta__infor">조회수</span>
+                  <span> ● </span>
+                  <span class="video-meta__infor">1주</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="videobook">
+            <img class="videobook__img" src="./image/image1.jpg" />
+            <div class class="videobook--wrap">
+              <div class="videobook-infor">
+                <a
+                  id="videobook-infor__avatar-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <img class="videobook-infor__img" src="./image/user1.jpg" />
+                </a>
+              </div>
+              <div class="videobook-meta">
+                <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
+                <a
+                  id="videobook-meta__title-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <span class="videobook-meta__title">동영상 제목</span>
+                </a>
+                <a href="#">
+                  <span class="videobook-meta__title">채널 제목</span>
+                </a>
+                <div class="video-meta__infor">
+                  <span class="video-meta__infor">조회수</span>
+                  <span> ● </span>
+                  <span class="video-meta__infor">1주</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="videobook">
+            <img class="videobook__img" src="./image/image1.jpg" />
+            <div class class="videobook--wrap">
+              <div class="videobook-infor">
+                <a
+                  id="videobook-infor__avatar-anchor"
+                  href="https://www.youtube.com/"
+                >
+                  <img class="videobook-infor__img" src="./image/user1.jpg" />
+                </a>
+              </div>
+              <div class="videobook-meta">
+                <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
+                <a
+                  id="videobook-meta__title-anchor"
+                  href="https://www.youtube.com/"
+                >
                   <span class="videobook-meta__title">동영상 제목</span>
                 </a>
                 <a href="#">
