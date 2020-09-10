@@ -3,4 +3,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   height: 50px !important;
+  align-items: center;
+}
+.header-start {
+  display: flex;
+  align-items: center;
 }

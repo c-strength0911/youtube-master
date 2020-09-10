@@ -43,3 +43,9 @@ a > i {
   height: 30px;
   width: 30px;
 }
+
+.header-start__button {
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 20px;
+}
