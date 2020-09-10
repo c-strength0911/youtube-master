@@ -57,3 +57,43 @@ a {
 }
 .drawer {
 }
+
+#theme-button {
+  display: flex;
+  border: none;
+  border-radius: 18px;
+  width: 200px;
+  height: 47px;
+  background-color: white;
+  outline: none;
+  color: inherit;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  padding: 12px 19.2px;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+}
+#theme-button__wtext,
+#theme-button__btext {
+  align-self: center;
+  padding-left: 10px;
+}
+.theme-button__image {
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.hidden {
+  display: none;
+}
+
+.darkmode {
+  background-color: #202020;
+}
+.darkmode main {
+  background-color: #181818;
+}
+.darkmode .videobook-meta__title {
+  color: white;
+}

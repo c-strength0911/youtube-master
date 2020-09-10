@@ -12,9 +12,9 @@
       src="https://kit.fontawesome.com/38c689ec28.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Youtube-Master</title>
   </head>
-  <body>
+  <body class="">
     <header>
       <div class="header-start">
         <button class="header-start__button">
@@ -106,10 +106,9 @@
           <!-- aside 시청 기록 -->
         </ul>
       </aside>
-
-      <main>
+      <main >
         <div class="head-title">
-          <span class="head-title--style">맞춤 영상</span>
+          <span class="head-title--style videobook-meta__title">맞춤 영상</span>
         </div>
         <div class="drawer">
           <div class="videobook">
@@ -135,9 +134,9 @@
                   <span class="videobook-meta__title">채널 제목</span>
                 </a>
                 <div class="video-meta__infor">
-                  <span class="video-meta__infor">조회수</span>
+                  <span class="video-meta__infor videobook-meta__title">조회수</span>
                   <span> ● </span>
-                  <span class="video-meta__infor">1주</span>
+                  <span class="video-meta__infor videobook-meta__title">1주</span>
                 </div>
               </div>
             </div>
@@ -154,7 +153,6 @@
                 </a>
               </div>
               <div class="videobook-meta">
-                <!-- h3과 sapn의 차이는 margin이 있고 없고의 차이 -->
                 <a
                   id="videobook-meta__title-anchor"
                   href="https://www.youtube.com/"
@@ -353,7 +351,18 @@
             </div>
           </div>
         </div>
+        <footer class="footer">
+          <!-- <address class="footer__address"> -->
+          <button id="theme-button">
+            <div class="theme-button__image"> 
+              <img src="image/moon_icon.svg" id="moon-icon" />
+              <img src="image/sun_icon.svg" id="sun-icon" class="hidden" />
+            </div>
+            <span id="theme-button__btext">다크 모드로</span>
+            <span id="theme-button__wtext" class="hidden">화이트 모드로</span>
+          </button>
+        </footer>
       </main>
-    </div>
+    <script src="./darkmode.js"></script>
   </body>
 </html>
