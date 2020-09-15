@@ -33,7 +33,8 @@ li {
   height: 30px;
   margin-bottom: 10px !important;
 }
-li > a {
+li > a,
+div > a {
   color: gray;
   text-decoration: none;
 }
