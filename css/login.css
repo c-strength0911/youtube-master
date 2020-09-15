@@ -1,0 +1,18 @@
+.user-sign-up_sns_list_item {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.user-sign-up_sns {
+}
+.user-sign-up_sns_list {
+  display: flex;
+  flex-direction: row;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
